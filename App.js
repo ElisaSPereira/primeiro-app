@@ -1,31 +1,13 @@
 import { Text, View, Image, StyleSheet, TouchableOpacity, ScrollView } from 'react-native';
 import Logo from "./assets/logo-instagram.png";
 import { Feather, MaterialCommunityIcons } from '@expo/vector-icons';
+import Header from './src/components/Header';
 
 
 export default function App() {
   return (
     <View style={{ marginVertical: 32, marginHorizontal: 16, flex: 1 }}>
-
-      <View
-        style={{
-          flexDirection: "row",
-          alignItems: "center",
-          width: "100%",
-          justifyContent: "space-between"
-        }}>
-        <Image style={{ width: 200, height: 60 }} source={Logo} />
-
-        <View style={{ flexDirection: "row" }}>
-          <TouchableOpacity>
-            <Feather name="heart" size={24} color="black" />
-          </TouchableOpacity>
-          <TouchableOpacity>
-            <MaterialCommunityIcons name="facebook-messenger" size={24} color="black" />
-          </TouchableOpacity>
-        </View>
-      </View>
-
+      <Header />
       <ScrollView contentContainerStyle={{
         gap: 8, 
         height:100
