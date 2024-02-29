@@ -1,7 +1,6 @@
-import { View, StyleSheet} from 'react-native';
-import InfoProfile from './src/components/InfoProfile';
-import Perfil from './src/assets/foto_mulher.jpg';
-
+import { View } from 'react-native';
+import Header from './src/components/Header';
+import Stories from './src/components/Stories';
 
 
 export default function App() {
@@ -11,15 +10,13 @@ export default function App() {
       marginVertical: 32,
       marginHorizontal: 16, 
       flex: 1 }}>
+      <Header />
+      <Stories />
 
-    <InfoProfile
-    image={Perfil}
-    publi={ 250 }
-    followers={ 1230 }
-    following={ 5 }
-    description="lorem lorem lorem"/>
-    
+      
     </View>
+
+    
   );
 }
 
@@ -31,4 +28,3 @@ const style = StyleSheet.create({
     justifyContent: 'center',
   }
 })
-
