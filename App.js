@@ -1,6 +1,8 @@
 import { View, StyleSheet} from 'react-native';
 import InfoProfile from './src/components/InfoProfile';
 import Perfil from './src/assets/foto_mulher.jpg';
+import MyPosts from './src/components/MyPosts';
+
 
 
 
@@ -18,7 +20,9 @@ export default function App() {
     followers={ 1230 }
     following={ 5 }
     description="lorem lorem lorem"/>
-    
+    <MyPosts
+    image={Perfil}
+    />
     </View>
   );
 }
